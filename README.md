@@ -18,8 +18,10 @@ Please find different size inputs under the `input/` folder to experiment differ
 Python program implementing multiprocessing wordcount.  
 Takes **optional** text filepath argument. Defaults to `input/sample20.txt`.   
 
-Please run in terminal using `python wordcount.py <TEXT_FILEPATH>` or simply `python wordcount.py`  
+Please run in terminal, ideally inside running docker container.  
+List running docker images by using `docker ps` and access the bash by executing `docker exec -it < DOCKER_PROCESS_ID >`  
+Within the running docker image, please cd into the `ẁork/` folder and use `python wordcount.py <TEXT_FILEPATH>` or simply `python wordcount.py`   
 Example: `python wordcount.py input/sample20.txt`  
-  
+ 
 Outputs same name file containing wordcount under `output/` folder.  
 Example: `ouput/sample20.txt`  
